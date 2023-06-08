@@ -1,0 +1,366 @@
+/******************************************************** extra large **************************************************/
+@media screen and (max-width:1450px) and (min-width:1200px){
+    
+    /* start of nav */
+    .nav-icons
+    {
+        width: 8%;
+    }
+   /* end of nav */
+
+}
+
+
+/********************************************************** large ***********************************************************/
+@media screen and (max-width:1200px) and (min-width:992px){
+    
+    /* start of nav */
+    .nav-icons
+     {
+       width: 9%;
+     }
+     .nav ul
+     {
+         width: 49%;
+     }
+    /* end of nav */
+    
+     /* start of home */
+    .home-caption h2,.home-caption h2::after
+    {
+        font-size: 65px;
+    }
+    /* end of home */
+
+}
+
+
+
+/********************************************************** medium ***********************************************************/
+@media screen and (max-width:992px) and (min-width:768px){
+  
+    /*start of nav*/
+    .nav .nav-icons,.nav ul 
+    {
+        display: none;
+    }
+    .settings
+    {
+        display: block;
+    }
+    /*end of nav*/
+
+    /* start of home */
+    .home-caption h2,.home-caption h2::after
+    {
+        font-size: 55px;
+    }
+    /* end of home */
+
+    /* start of about */
+
+     .Contact.Contact-header
+    {
+        font-size: 90px;
+    }
+    .Contact .Contact-header::before
+    {
+        font-size: 35px;
+    }
+  .Contact .Contact-header::after
+    {
+        top:73%
+    }
+    /* end of about */
+
+
+
+
+     /* start of contact */
+     .Contact-container
+     {
+         width: 88%;
+         display: flex;
+         flex-wrap: wrap;
+     }
+     .Contact-left
+     {
+        width: 30%;
+     }
+     .Contact-right
+     {
+        width:70%
+     }
+     /* end of contact */
+
+     /* start of footer */
+    .footer-container
+    {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+    .footer-container p
+    {
+        width: 100%;
+        text-align: center;
+    }
+    .footer-caption a
+    {
+        width: 100%;
+    }
+    .footer-caption
+    {
+       margin-top: 25px;
+    }
+    /* start of footer */
+}
+
+
+/********************************************************** small ***********************************************************/
+@media screen and (max-width:768px) and (min-width:600px){
+   
+    /*start of nav*/
+    .nav .nav-icons,.nav ul 
+    {
+        display: none;
+    }
+    .settings
+    {
+        display: block;
+    }
+    /*end of nav*/
+
+    /* start of home */
+    .home-caption p:nth-child(1)
+    {
+        font-size:29px
+    } 
+    .home-caption p:nth-child(3)
+    {
+        font-size: 24px;
+    }
+    .home-caption h2,.home-caption h2::after
+    {
+        font-size: 50px;
+    }
+    /* end of home */
+
+     /* start of about */
+
+    .Contact .Contact-header
+    {
+        font-size: 85px;
+    }
+    .Contact .Contact-header::before
+    {
+        font-size: 35px;
+    }
+    .Contact .Contact-header::after
+    {
+        top:73%
+    }
+    /* end of about */
+
+
+
+
+  
+
+     /* start of contact */
+     .Contact-container
+     {
+         width: 75%;
+         display: flex;
+         flex-wrap: wrap;
+         flex-direction: column-reverse;
+     }
+     .Contact-left
+     {
+         width: 100%;
+         text-align:center;
+     }
+     .Contact-right
+     {
+         width: 100%;
+         text-align:center;
+     }
+     .Contact-right .name-email
+     {
+         display:flex;
+         flex-wrap:wrap;
+     }
+     .name-email .name,.name-email .email
+     {
+         width: 100%;
+     }
+     .name-email .name
+     {
+         margin-bottom: 20px;
+     }
+     /* end of contact */
+
+    /* start of footer */
+    .footer-container
+    {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+    .footer-container p
+    {
+        width: 100%;
+        text-align: center;
+    }
+    .footer-caption a
+    {
+        width: 100%;
+    }
+    .footer-caption
+    {
+       margin-top: 25px;
+    }
+    /* start of footer */
+
+}
+
+@media (max-width: 991px) 
+{
+
+
+   .display-temp .city-temp {display: block !important;}
+
+   .display-temp #search-bar {margin-bottom: 10px !important;}
+
+   .display-temp .search,
+   .display-temp .temp-card {
+       width: 100%;
+       margin: 20px 0 !important;
+   }
+
+   .display-temp{
+
+      height: 180vh;
+   
+   } 
+
+   
+}
+/********************************************************** extra small ******************************************************/
+@media screen and (max-width:600px){
+
+    /*start of nav*/
+    .nav .nav-icons,.nav ul 
+    {
+        display: none;
+    }
+    .settings
+    {
+        display: block;
+    }
+    /*end of nav*/
+
+    /* start of home */
+    .home-caption p:nth-child(1)
+    {
+        font-size:29px
+    } 
+    .home-caption p:nth-child(3)
+    {
+        font-size: 22px;
+    }
+    .home-caption h2,.home-caption h2::after
+    {
+        font-size: 45px;
+    }
+    .home-caption button
+    {
+        padding: 15px 30px;
+    }
+    /* end of home */
+
+    /* start of about */
+    .Contact .Contact-header
+    {
+        font-size: 75px;
+    }
+    .testimonial .testimonial-header
+    {
+        font-size:60px
+    }
+    .Contact .Contact-header::before
+
+    {
+        font-size: 25px;
+    }
+    .Contact .Contact-header::after
+    {
+        top:73%
+    }
+    /* end of about */
+
+
+
+
+    /* start of contact */
+    .Contact-container
+    {
+        width: 95%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .Contact-left
+    {
+        width: 100%;
+        text-align:center;
+    }
+    .Contact-right
+    {
+        width: 100%;
+        text-align:center;
+    }
+    .Contact-right .name-email
+    {
+        display:flex;
+        flex-wrap:wrap;
+    }
+    .name-email .name,.name-email .email
+    {
+        width: 100%;
+    }
+    .name-email .name
+    {
+        margin-bottom: 20px;
+    }
+    .Contact-right button
+    {
+        padding: 13px 30px;
+    }
+    /* end of contact */
+
+    /* start of footer */
+    .footer-container
+    {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+    .footer-container p
+    {
+        width: 100%;
+        text-align: center;
+    }
+    .footer-caption a
+    {
+        width: 100%;
+    }
+    .footer-caption
+    {
+       margin-top: 25px;
+    }
+    /* start of footer */
+}

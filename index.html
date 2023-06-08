@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Simone" content="Look at my portfolio">
+    <title>Weather Forecast</title>
+    <!-- link for tite icon -->
+    <link rel="shortcut icon" href="images/index.jpg" type="image">
+    <!-- for font awesome icons -->
+    <link rel="stylesheet" href="style/all.css">
+    <!-- link for bootstrap -->
+    <link rel="stylesheet" href="style/bootstrap.css">
+    <!-- link for css -->
+    <link rel="stylesheet" href="style/index.css">
+    <!-- link for media query -->
+    <link rel="stylesheet" href="style/media.css">
+</head>
+
+<body>
+    <!----------------------------------------------------- start of home ----------------------------------------------------->
+    <div class="home" id="Home">
+        <!------------------------------------------------ start of nav --------------------------------------------------->
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container">
+              <a href="#Home"  class="navbar-brand text-decoration-none">
+                <button class="d-flex weather_btn">
+                    <img src="images/logo@2x.png" class="w-25 h-25 mt-3" alt="Navbar-icon">
+                    <div class="nav-brand d-flex flex-column mt-3 ms-3">
+                        <p>Weather</p>
+                        <p>tagline goes here</p>
+                    </div>
+                </button>
+            </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse " id="navbarSupportedContent">
+
+                <ul class="links_nav  list-unstyled d-flex mx-auto gap-3 ">
+                    <li><a href="#Home" class="text-decoration-none   ">Home</a></li>
+                    <li><a href="#news" class="text-decoration-none">News</a></li>
+                    <li><a href="#What" class="text-decoration-none">Live cameras</a></li>
+                    <li><a href="#Resume" class="text-decoration-none"> Photos</a></li>
+                    <li><a href="#Contact" class="text-decoration-none">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <!------------------------------------------------------ end of nav --------------------------------------------------->
+        <div class="home-caption">
+            <p>WEATHER FORECASTING</p>
+            <p class="w-75 mx-auto  fs-2">Weather simply refers to the condition of air on the earth at a given place and time. It
+                is a continuous, data-intensive, multidimensional, dynamic and chaotic process. These
+                properties make weather forecasting is a formidable challenge. Forecasting is the process
+                of estimation in unknown situations from the historical data. </p>
+        </div>
+
+        <!-- fixed gear -->
+        <div class="gear">
+            <i class="fa-solid fa-gear"></i>
+        </div>
+
+        <!-- arrow to about  -->
+        <div class="arrow">
+            <a href="#news"><i class="fa fa-chevron-down arrow-down"></i></a>
+        </div>
+
+        <!-- fixed arrow up -->
+        <a href="#Home">
+            <div class="arrow-up" title="Back to top">
+                <i class="fa fa-chevron-up"></i>
+            </div>
+        </a>
+    </div>
+    <!--------------------------------------------------------- end of home --------------------------------------------------->
+
+    <!------------------------------------------------------- start of about -------------------------------------------------->
+
+    <section class="display-temp " id="search" >
+        <div class="bg-color  py-5 " id="news">
+          <div class="container mt-3">
+            <div class="search m-auto">
+              <input type="text" id="search-bar" class="w-100 mb-5" placeholder="Find Your Location..."
+                style="font-family:Arial, FontAwesome" />
+            </div>
+            <div class="city-temp d-flex">
+    
+        <!-- current day -->
+              <div class="temp-card shadow current-day">
+                <div class="day-and-date d-flex justify-content-between">
+                  <p id="today">Monday</p>
+                  <p id="today-date">3 May</p>
+                </div>
+    
+                <div class="datalisOFWeather">
+    
+                  <div class="about-city text-center">
+                    <p id="location" class="text-white"></p>
+                    <p id="country" class="text-light "></p>
+                  </div>
+    
+                  <div class="d-flex justify-content-between my-4">
+                    <div class="pt-3">
+                      <h2 id="today-degree" class="d-inline-block text-white"></h2>
+                      <h2 class="d-inline-block text-white"><sup>o</sup>C</h2>
+                    </div>
+                    <img id="today-icon" width="90" />
+                  </div>
+                  <p id="today-description" class="text-white text-center fs-4"></p>
+                  <div class="details">
+                    <i class="fas fa-umbrella pr-1 text-white"></i>
+                    <span id="humidty" class="text-white"></span> <span class="me-2 text-white">%</span>
+    
+    
+                    <i class="fas fa-wind pl-3 pr-1 text-white"></i>
+                    <span id="wind" class="text-white"></span> <span class="me-2 text-white">km/h</span>
+    
+                    <i class="far fa-compass pl-3 pr-1 text-white"></i>
+                    <span id="wind_dir" class="text-white"></span>
+                  </div>
+                </div>
+              </div>
+    
+              <!-- 2  -->
+              <div class="temp-card text-center shadow weather-next-days">
+                <div class="day-and-date">
+                  <p class="nextDay text-center">Tuesday</p>
+                </div>
+    
+                <div class="datalisOFWeather text-white">
+                  <div>
+                    <img class="nextDay-icon" width="90" />
+                  </div>
+                  <h2 class="max-degree d-inline-block"></h2>
+                  <h2 class="d-inline-block"><sup>o</sup>C</h2>
+                  <br>
+                  <p class="min-degree d-inline-block"></p>
+                  <p class="d-inline-block"><sup>o</sup>C</p>
+                  <p class="nextDay-description text-white fs-4"></p>
+                </div>
+              </div>
+    
+    
+              <!-- 3 -->
+              <div class="temp-card text-center shadow weather-next-days">
+                <div class="day-and-date ">
+                  <p class="nextDay text-center">friday</p>
+                </div>
+    
+                <div class="datalisOFWeather text-white">
+                  <div>
+                    <img class="nextDay-icon" width="90" />
+                  </div>
+                  <h2 class="max-degree d-inline-block"></h2>
+                  <h2 class="d-inline-block"><sup>o</sup>C</h2>
+                  <br>
+                  <p class="min-degree d-inline-block"></p>
+                  <p class="d-inline-block"><sup>o</sup>C</p>
+                  <p class="nextDay-description text-white  fs-4"></p>
+                </div>
+              </div>
+    
+              
+    
+    
+            </div>
+          </div>
+        </div>
+      </section>
+    <!--------------------------------------------------------- end of about -------------------------------------------------->
+
+
+
+    <!------------------------------------------------------- start of contact ------------------------------------------------>
+    <div class="Contact" id="Contact">
+        <h2 class="Contact-header">Contact</h2>
+        <div class="Contact-container">
+            <div class="Contact-left">
+                <!-- 1 -->
+                <div class="address">
+                    <h3>ADDRESS</h3>
+                    <p>4th Floor, Plot No.22,</p>
+                    <p>145 Murphy Canyon Rd.</p>
+                    <p>San Diego CA 2028 </p>
+                </div>
+                <!-- 2 -->
+                <div class="media">
+                    <P><i class="fas fa-phone"></i>(002) 01028978688</P>
+                    <P><i class="fas fa-fax"></i>(060) 555 545 555</P>
+                    <P><i class="fas fa-envelope"></i>chat@simone.com</P>
+                </div>
+                <!-- 3 -->
+                <h3>Follow Me</h3>
+                <div class="follow-icons">
+                    <i class="fab fa-dribbble" title="dribbble"></i>
+                    <i class="fab fa-twitter" title="twitter"></i>
+                    <i class="fab fa-facebook" title="facebook"></i>
+                    <i class="fab fa-google" title="google"></i>
+                    <i class="fab fa-github" title="github"></i>
+                </div>
+            </div>
+
+            <div class="Contact-right">
+                <h2>Send us a note</h2>
+                <form>
+                    <div class="name-email">
+                        <input type="text" minlength="15" maxlength="30" required placeholder="Name" name="name"
+                             class="name">
+                        <input type="email" required name="email" placeholder="Email" class="email">
+                    </div>
+                    <textarea name="about-us" minlength="50" maxlength="200" required spellcheck="true"
+                        placeholder="Tell us more about your needs......."></textarea>
+                    <button>Send Message</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <!------------------------------------------------------- end of contact -------------------------------------------------->
+
+    <!------------------------------------------------------- start of footer ------------------------------------------------->
+    <footer>
+        <div class="footer-container">
+            <p>Copyright Â© 2021 <a href="#Home">alaa shamms</a>. All Rights Reserved.</p>
+            <div class="footer-caption">
+                <a href="#ss" class="Terms">Terms & Policy</a>
+                <a href="#ss" class="Disclaimer">Disclaimer</a>
+            </div>
+        </div>
+    </footer>
+    <!------------------------------------------------------- end of footer --------------------------------------------------->
+
+
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
